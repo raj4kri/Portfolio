@@ -1,0 +1,69 @@
+.container {
+  max-width: 100%;
+  max-height: 500%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
+}
+
+.c1 {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  z-index: 1;
+  transition: width 2s, height 4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s ;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+
+}
+
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  
+.c1:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+  /* flex: 50px; */
+
+.c2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px solid rgb(0, 0, 0);
+  background-color: blue;
+  border-radius: 50%;
+  z-index: 2;
+  transition: width 2s, height 4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  /* z-index: 2; */
+}
+.c3 {
+  width: 50px;
+  height: 50px;
+border:50%;
+  background-color: brown;
+  border-radius: 50%;
+  transition: width 2s, height 4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.c2:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
+.c3:hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  }
